@@ -10,14 +10,9 @@ class UserSchema(UserBase):
     password: str
 
 
-
-
 class UserSchemaSignIn(BaseModel):
     password: str
     email: EmailStr
-
-
-
 
 
 class Token(BaseModel):
@@ -27,7 +22,3 @@ class Token(BaseModel):
 
 class TokenData(BaseModel):
     email: EmailStr | None = None
-
-
-
-

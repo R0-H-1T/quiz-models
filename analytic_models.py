@@ -2,7 +2,6 @@ from typing import List
 from pydantic import BaseModel
 
 
-
 class Answer(BaseModel):
     mcq: bool
     choice: int | None = None
@@ -15,7 +14,6 @@ class Question(BaseModel):
     qna_id: int
     id: int
     text: str | None = None
-
 
 
 class QnAnswers(BaseModel):

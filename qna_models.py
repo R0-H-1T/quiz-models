@@ -8,15 +8,13 @@ class AnswerBase(BaseModel):
     text: str | None = None
 
 
-
 class Answer(AnswerBase):
     pass
 
 
 class Answers(BaseModel):
-    questionnaire_id: int 
+    questionnaire_id: int
     answers: List[Answer]
-
 
 
 class QuestionBase(BaseModel):
@@ -33,4 +31,3 @@ class Question(QuestionBase):
 class Questionaire(BaseModel):
     title: str
     questions: List[Question]
-
